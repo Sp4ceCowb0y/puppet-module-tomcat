@@ -1,4 +1,4 @@
-class tomcat::config inherits tomcat {
+class tomcat::config {
 
   file{ $::tomcat::config_path :
     content => template('tomcat/tomcat.conf.erb'),

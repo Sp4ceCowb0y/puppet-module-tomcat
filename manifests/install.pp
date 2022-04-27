@@ -1,8 +1,11 @@
-class tomcat::install inherits tomcat {
+class tomcat::install (
 
-  package { $::tomcat::packages :
+  String $tomcat_package,
+
+){
+
+  package { $tomcat_package :
     ensure => installed,
-    before => Service["tomcat"],
   }
 
 }
