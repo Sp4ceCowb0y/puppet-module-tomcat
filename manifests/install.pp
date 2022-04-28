@@ -4,7 +4,7 @@ class tomcat::install (
 
 ){
 
-  package { $tomcat_package :
+  package { $tomcat_package:
     ensure => installed,
   }
 
