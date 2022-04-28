@@ -1,4 +1,4 @@
-class tomcat::service_name {
+class tomcat::service {
 
   service { $::tomcat::service_name :
     ensure     => $::tomcat::service_state,
